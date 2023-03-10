@@ -1,0 +1,16 @@
+{
+  "name": "cs-546-lab-6",
+  "version": "1.0.0",
+  "description": "Ryan Gallagher Lab 6 for CS546",
+  "main": "app.js",
+  "scripts": {
+    "seed": "node ./tasks/seed.js",
+    "start": "node app.js"
+  },
+  "author": "Ryan Gallagher 10445392",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.0"
+  }
+}

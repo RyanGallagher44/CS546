@@ -1,0 +1,14 @@
+{
+  "name": "cs-546-lab-3",
+  "version": "1.0.0",
+  "description": "Ryan Gallagher Lab 3 for CS546",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Ryan Gallagher 10445392",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}

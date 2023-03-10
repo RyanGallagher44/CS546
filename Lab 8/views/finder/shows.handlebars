@@ -1,0 +1,15 @@
+<h2>{{term}}</h2>
+<section>
+    {{#if shows}}
+        <ul id="shows-list">
+            {{#each shows}}
+                {{#with show}}
+                <li><a href="/show/{{id}}">{{name}}</a></li>
+                {{/with}}
+            {{/each}}
+        </ul>
+    {{else}}
+    <p class="show-not-found">We're sorry, but no results were found for {{term}}.</p>
+    {{/if}}
+    <a id="another-search" href="/">Make another search</a>
+</section>

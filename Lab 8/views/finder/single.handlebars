@@ -1,0 +1,27 @@
+<article>
+    {{#if name}}
+    <h1>{{name}}</h1>
+    <img class="show-img" alt="{{name}}" src="{{imageLink}}"/>
+    <dl>
+        <dt>Language</dt>
+        <dd>{{lang}}</dd>
+        <dt>Genres</dt>
+        <dd>
+            <ul id="genres-list">
+                {{#each genres}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </dd>
+        <dt>Average Rating</dt>
+        <dd>{{avg}}</dd>
+        <dt>Network</dt>
+        <dd>{{net}}</dd>
+        <dt>Summary</dt>
+        <dd>{{{sum}}}</dd>
+    </dl>
+    {{/if}}
+    {{#if error}}
+    <p class="error-not-found">{{error}}</p>
+    {{/if}}
+</article>

@@ -1,0 +1,19 @@
+<article>
+    <p>
+        You can search this site for TV shows by querying a keyword.
+        The site will respond with the first 5 (if there are at least 5) show titles
+        that most closely align with the queried keyword.  You may then click on any
+        show title to see further details including its network, average rating, and 
+        a summary.
+    </p>
+    <form action="/searchshows" method="POST">
+        <label for="search-bar">
+            Search
+        </label>
+        <input id="search-bar" type="search" name="showSearchTerm" class="search" placeholder="Enter keyword">
+        <button class="submit-button" type="submit">Submit</button>
+    </form>
+    {{#if error}}
+    <p class="error">{{error}}</p>
+    {{/if}}
+</article>
